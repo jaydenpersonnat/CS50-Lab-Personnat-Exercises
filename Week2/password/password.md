@@ -8,7 +8,7 @@
 
 
 ### Background
-<a href="https://www.youtube.com/watch?v=B-NhD15ocwA&t=1s" target="_blank"><img src = "spaceballs.png"> </a>
+<a href="https://www.youtube.com/watch?v=B-NhD15ocwA&t=1s" target=_blank><img src = "spaceballs.png"> </a>
 
 As we all know by now, it’s important to use passwords that are not easy to guess! Many web apps now requre passwords that requre not only alphabetical characters, but also number and symbols.
 

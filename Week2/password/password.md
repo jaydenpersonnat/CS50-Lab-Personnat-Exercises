@@ -8,7 +8,7 @@
 
 
 ### Background
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B-NhD15ocwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[(spaceballs.png)]][https://www.youtube.com/watch?v=B-NhD15ocwA&t=1s]
 As we all know by now, it’s important to use passwords that are not easy to guess! Many web apps now requre passwords that requre not only alphabetical characters, but also number and symbols.
 
 In this lab, the user is prompted for a password, which will then be validated using a function ```check```

@@ -21,7 +21,7 @@ you start with nothing more than a couple of commonly used libraries and an empt
 the command line, to a corresponding word with numbers replacing vowels.
 
 ### Demo 
-<img src="n-vowelsDemo.gif"> 
+<img src="no-vowelsDemo.gif"> 
 
 ### Getting Started 
 1. Log into code.cs50.io using your GitHub account.

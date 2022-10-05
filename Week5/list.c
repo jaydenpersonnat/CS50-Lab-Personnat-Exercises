@@ -14,7 +14,7 @@ node;
 node *insert(int k, node *n);
 void print_bool(bool b);
 bool search(int k, node *n);
-
+void free_list(node *head); 
 
 
 int main(void)
@@ -60,4 +60,15 @@ void print_bool(bool b)
     {
         printf("False\n");
     }
+}
+
+void free_list(node *head)
+{
+    if (!head)
+    {
+        return;
+    }
+    free_list(head->next);
+
+    free(head);
 }

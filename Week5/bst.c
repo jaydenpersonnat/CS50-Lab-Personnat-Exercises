@@ -15,6 +15,7 @@ int size(node *root);
 node *insert(int k, node *root);
 void print_bool(bool b);
 bool search(int k, node *root);
+void free_bst(node *r);
 
 int main(void)
 {
@@ -49,7 +50,7 @@ int main(void)
 int size(node *root)
 {
     // TODO: return size of bst
-    return 0
+    return 0; 
 }
 
 
@@ -99,7 +100,7 @@ bool search(int k, node *root)
     }
     else
     {
-        // search right subtree 
+        // search right subtree
         return search(k, root->right);
     }
 }
@@ -114,4 +115,17 @@ void print_bool(bool b)
     {
         printf("False\n");
     }
+}
+
+void free_bst(node *r)
+{
+    if (!r)
+    {
+        return;
+    }
+
+    free_bst(r->left);
+    free_bst(r->right);
+
+    free(r);
 }

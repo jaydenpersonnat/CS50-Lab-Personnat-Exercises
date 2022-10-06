@@ -50,7 +50,11 @@ int main(void)
 int size(node *root)
 {
     // TODO: return size of bst
-    return 0; 
+    if (!root)
+    {
+        return 0; 
+    }
+    return 1 + size(root->left) + size(root->right); 
 }
 
 

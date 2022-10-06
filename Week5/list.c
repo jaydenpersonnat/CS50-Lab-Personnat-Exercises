@@ -39,15 +39,42 @@ int main(void)
 node *insert(int k, node *n)
 {
     // create new node
-
+    node *new_node = malloc(sizeof(node)); 
+    new_node->node = k; 
+    new_node->next = n; 
     // insert at head of linked list and return head
-    return n;
+    return new_node;
 }
 
 bool search(int k, node *n)
 {
     // two ways to do this: using recursion or iteration
+    node *cursor = n; 
+
+    while (cursor)
+    {
+        if (cursor->node == k)
+        {
+            return true; 
+        }
+        cursor = cursor->next; 
+    }
+
     return false;
+
+    // Using recursion 
+    // if (!n)
+    // {
+    //     return false; 
+    // }
+    // else if (n->node == k)
+    // {
+    //     return true; 
+    // }
+    // else
+    // {
+    //     return search(k, n->next); 
+    // }
 }
 
 void print_bool(bool b)
